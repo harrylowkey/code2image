@@ -1,6 +1,6 @@
 {
 	"name": "@harrylowkey/code2image",
-	"version": "0.0.13",
+	"version": "0.0.19",
 	"description": "",
 	"author": "harrylowkey.tech@gmail.com",
 	"license": "MIT",
@@ -19,10 +19,8 @@
 		"test:e2e": "jest --config ./test/jest-e2e.json"
 	},
 	"dependencies": {
-		"reflect-metadata": "^0.2.0",
-		"rxjs": "^7.8.1",
 		"chrome-aws-lambda": "10.1.0",
-		"puppeteer-core": "22.6.5"
+		"puppeteer": "22.6.5"
 	},
 	"devDependencies": {
 		"@nestjs/common": "^10.0.0",
@@ -37,6 +35,8 @@
 		"@types/supertest": "^6.0.0",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
+		"rxjs": "^7.8.1",
+		"reflect-metadata": "^0.2.0",
 		"eslint": "^8.42.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-prettier": "^5.0.0",
