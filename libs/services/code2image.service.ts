@@ -124,7 +124,7 @@ export class Code2ImageService implements Code2ImageInterface {
     async #generatePreviewImage(): Promise<Buffer> {
         // console.log('🛠 ', 'Preview Page URL', this.#PAGE_URL);
         const browser = await chromium.puppeteer.launch({
-            args: chromium.args,
+            args: [...chromium.args, '--disable-gpu'],
             defaultViewport: chromium.defaultViewport,
             executablePath: await chromium.executablePath,
             headless: true,
