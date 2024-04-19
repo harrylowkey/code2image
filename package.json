@@ -1,9 +1,14 @@
 {
   "name": "@harrylowkey/code2image",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "",
   "author": "harrylowkey.tech@gmail.com",
   "license": "MIT",
+  "keywords": [
+    "code2image",
+    "generateImageFromCode",
+    "generateImage"
+  ],
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"libs/**/*.ts\" \"test/**/*.ts\"",
