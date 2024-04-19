@@ -2,7 +2,7 @@
 
 ## Description
 
-This repo has been forked from [code2img](https://github.com/cyberpirate92/code2img)
+This repo has been rebuilt based on [code2img](https://github.com/cyberpirate92/code2img)
 
 ## Installation
 
@@ -89,4 +89,4 @@ export class PostBuilderService implements PostBuilderInterface {
 ```
 
 ## Example
-To learn more about the usage of this repository, visit: [instagram-coding-easily-api](https://github.com/harrylowkey/instagram-coding-easily-api)
+To learn more about the usage of this package, visiting: [instagram-coding-easily-api](https://github.com/harrylowkey/instagram-coding-easily-api)
