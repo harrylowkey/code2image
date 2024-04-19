@@ -1,5 +1,7 @@
 # Code2Image
 
+Generate image from code
+
 ## Description
 
 This repo has been rebuilt based on [code2img](https://github.com/cyberpirate92/code2img)
@@ -32,7 +34,6 @@ Import ServeStaticModule in your Nest application.
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { Module } from '@nestjs/common';
 import { join } from 'path';
-import { ServeStaticModule } from '@nestjs/serve-static';
 
 @Module({
   imports: [
