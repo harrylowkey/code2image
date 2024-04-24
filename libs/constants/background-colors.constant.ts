@@ -1,0 +1,22 @@
+export const BACKGROUND_COLORS = [
+    'radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)',
+    'radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 100%)',
+    'radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(0,255,0,1) 100%)',
+    'radial-gradient(circle, rgba(255,0,255,1) 0%, rgba(255,255,255,1) 100%)',
+    'radial-gradient(circle, rgba(0,255,255,1) 0%, rgba(255,0,255,1) 100%)',
+    'radial-gradient(circle, rgba(255,255,0,1) 0%, rgba(0,255,255,1) 100%)',
+    'radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,0,255,1) 100%)',
+    'radial-gradient(circle, rgba(0,255,0,1) 0%, rgba(0,0,255,1) 100%)',
+    'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,0,1) 100%)',
+    'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%)',
+    'radial-gradient(circle, rgba(128,128,0,1) 0%, rgba(128,0,128,1) 100%)',
+    'radial-gradient(circle, rgba(0,128,128,1) 0%, rgba(128,0,0,1) 100%)',
+    'radial-gradient(circle, rgba(0,0,128,1) 0%, rgba(0,128,0,1) 100%)',
+    'radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(0,128,128,1) 100%)',
+    'radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(0,0,128,1) 100%)',
+    'radial-gradient(circle, rgba(0,128,0,1) 0%, rgba(128,128,0,1) 100%)',
+    'radial-gradient(circle, rgba(0,128,0,1) 0%, rgba(128,128,0,1) 100%)',
+    'radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(0,128,128,1) 100%)',
+    'radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(0,128,128,1) 100%)',
+    'radial-gradient(circle, rgba(0,128,128,1) 0%, rgba(128,0,0,1) 100%)'
+];

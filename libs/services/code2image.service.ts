@@ -6,6 +6,7 @@ import { ThemeEnum } from '../enums/theme.enum';
 import { FONTS } from '../constants/font.constant';
 import { GenerateImagePramType } from '../types/generate-image-param.type';
 import { Code2ImageInterface } from '../interfaces/code2image.interface';
+import { BACKGROUND_COLORS } from 'libs/constants/background-colors.constant';
 
 @Global()
 @Injectable()
@@ -21,13 +22,17 @@ export class Code2ImageService implements Code2ImageInterface {
     };
     #WIDTH: number = this.#DEFAULTS.VIEWPORT.WIDTH;
     #SCALE_FACTOR: number = this.#DEFAULTS.VIEWPORT.DEVICE_SCALE_FACTOR;
-    #BACKGROUND_COLOR: any = 'radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)';
     #BACKGROUND_PADDING: string | number = '5';
     #BACKGROUND_IMAGE: string = '';
     #IS_SHOW_BACKGROUND: string = 'true';
     #LINE_NUMBERS: string = 'false';
 
     constructor(@Inject(HOST) private host: string) { }
+
+    #getRandomBackgroundRadialGradient(): string {
+        const randomIndex = Math.floor(Math.random() * BACKGROUND_COLORS.length);
+        return BACKGROUND_COLORS[randomIndex];
+    }
 
     #trimLineEndings(text: string): string {
         let trimmedText = text;
@@ -102,7 +107,7 @@ export class Code2ImageService implements Code2ImageInterface {
         queryParams.set('code', trimmedCodeSnippet);
         queryParams.set('padding', this.#BACKGROUND_PADDING as string);
         queryParams.set('background-image', this.#BACKGROUND_IMAGE);
-        queryParams.set('background-color', this.#BACKGROUND_COLOR);
+        queryParams.set('background-color', this.#getRandomBackgroundRadialGradient());
         queryParams.set('line-numbers', this.#LINE_NUMBERS);
         queryParams.set('show-background', this.#IS_SHOW_BACKGROUND);
 

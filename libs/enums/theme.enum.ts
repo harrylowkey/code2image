@@ -8,12 +8,10 @@ enum ThemeEnum {
     DuotoneDark = 'duotone-dark',
     DuotoneEarth = 'duotone-earth',
     DuotoneForest = 'duotone-forest',
-    DuotoneLight = 'duotone-light',
     DuotoneSea = 'duotone-sea',
     DuotoneSpace = 'duotone-space',
     Hopscotch = 'hopscotch',
     MaterialDark = 'material-dark',
-    MaterialLight = 'material-light',
     MaterialOceanic = 'material-oceanic',
     Nord = 'nord',
     Pojoaque = 'pojoaque',
@@ -22,6 +20,8 @@ enum ThemeEnum {
     VS = 'vs',
     VscDarkPlus = 'vsc-dark-plus',
     Xonokai = 'xonokai'
+    // MaterialLight = 'material-light',
+    // DuotoneLight = 'duotone-light',
     // Base16AteliersulphurpoolLight = 'base16-ateliersulphurpool.light',
 }
 
