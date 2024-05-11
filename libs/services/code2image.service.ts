@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer';
+// import puppeteer from 'puppeteer';
 import { Global, Inject, Injectable } from '@nestjs/common';
 import chromium from 'chrome-aws-lambda';
 import { HOST } from 'libs/constants/provider.constant';
@@ -129,13 +129,13 @@ export class Code2ImageService implements Code2ImageInterface {
 
     async #generatePreviewImage(): Promise<Buffer> {
         // console.log('🛠 ', 'Preview Page URL', this.#PAGE_URL);
-        const browser = await puppeteer.launch({
+        const browser = await chromium.puppeteer.launch({
             args: [...chromium.args, '--disable-gpu'],
             defaultViewport: chromium.defaultViewport,
             headless: true,
             ignoreHTTPSErrors: true,
-            executablePath: '/usr/bin/google-chrome'
-            // executablePath: await chromium.executablePath
+            // executablePath: '/usr/bin/google-chrome'
+            executablePath: await chromium.executablePath
         });
 
         const page = await browser.newPage();
